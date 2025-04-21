@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    font-family: calibri,sans-serif;
+    text-align: center;
+
+}
+h1{
+    font-size: 70px;
+    color: gray;
+}
+.button{
+    color: whitesmoke;
+    background-color:gray;
+    padding: 10px 25px;
+    border: none;
+    margin: 10px;
+}
+header{
+    background: linear-gradient(45deg,teal,lightseagreen);    
+    padding: 25px;
+}
+header h1{
+    color: whitesmoke;
+}
+nav a{
+    text-decoration: none;
+    color: black;  
+    font-size: 18px;
+    padding: 10px 25px;
+    display: inline-block;
+}
+nav{
+    background-color: lightgray;
+    padding: 10px;
+
+}
+nav a:hover{
+    background-color: lightseagreen;
+    color: whitesmoke;
+} 
+p{
+    color: grey;
+    font-size :25px; 
+    margin-bottom: 10px;
+}
+.Home-Section{
+    padding: 100px;
+}
+.Our-packages figure{
+    box-shadow: 0 0 10px black;
+    width: 300px;
+    display: inline-block;
+    padding: 10px;
+    margin:20px ;
+}
+.Our-packages figure img{
+    width: 100%;
+}
+.Our-packages figure figcaption{
+    font-size: 30px;
+}
+.Our-packages figure p{
+    font-size: 15px;
+    padding: 5px 25px;
+
+}
+.main-footer{
+    background-color: gray;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 15px;
+}
+
+
