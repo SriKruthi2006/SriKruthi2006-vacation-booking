@@ -1,2 +1,3 @@
 # vacation-booking
-This is a vacation booking project using basic html and css
+This is a vacation booking project using basic Html and CSS
+It also includes a Booking form and a gallery which consists of different places
