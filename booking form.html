@@ -4,143 +4,138 @@
     <meta charset="UTF-8">
     <title>Form</title>
     <style>
-        body{
+        body {
             background-color: lightgray;
             margin: 0px;
             font-style: italic;
             font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        label{
+        label {
             padding-bottom: 5px;
             color: whitesmoke;
         }
-        div{
-        background-color: gray;
-        padding: 0px;
-       font-family: calibri,sans-serif;
-       box-shadow: 0 0 10px black;
-       width: 700px;
-       margin: 0px;
-    }
-        input{
-            color:chocolate;
+        div {
+            background-color: gray;
+            padding: 0px;
+            font-family: calibri, sans-serif;
+            width: 700px;
+            margin: auto;
+        }
+        input {
+            color: chocolate;
             padding: 0px;
             margin: 3px;
         }
-        .button{
+        .button {
             color: whitesmoke;
             background-color: darkgray;
             text-align: center;
             padding: 5px;
         }
-        footer{
-            background: linear-gradient(180deg,darkcyan,aqua) ;
-            padding:10px ;
-            color: whitesmoke;   
+        footer {
+            background: linear-gradient(180deg, darkcyan, aqua);
+            padding: 10px;
+            color: whitesmoke;
+            box-shadow: 0 0 3px black;
         }
-        header{
+        header {
             text-align: center;
             color: whitesmoke;
-            background: linear-gradient(180deg,darkcyan,aqua) ;          
-            margin: 0px;
-            padding: 0px;
+            background: linear-gradient(180deg, darkcyan, aqua);
+            padding: 10px 0;
+            width: 700px;
         }
-        form{
-            padding: 10px;
+        form {
             padding: 20px;
-            margin:auto;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Application Form</h1>
+    </header>
     <div>
-        <header>
-            <h1>Application Form</h1>
-        </header>
-    <form>
-        <label for="User Name">User Name</label>
+        <form>
+            <label for="User Name">User Name</label>
+            <br>
+            <input type="text" placeholder="Name" required>
+            <br>
+            <label for="Phone No">Phone No</label>
+            <br>
+            <input type="text" required>
+            <br>
+            <label for="Email Id">Email Id</label>
+            <br>
+            <input type="email" required>
+            <br>
+            <label for="Password">Password</label>
+            <br>
+            <input type="password" required>
+            <br>
+            <label for="Trip Type">Trip Type</label>
+            <select>
+                <optgroup label="Indian">
+                    <option value="Kerala">Kerala</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Tirupati">Tirupati</option>
+                    <option value="Darjelling">Darjelling</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Goa">Goa</option>
+                    <option value="OOty">OOty</option>
+                    <option value="Coorg">Coorg</option>
+                    <option value="Other">Other</option>
+                </optgroup>
+                <optgroup label="International">
+                    <option value="Australia">Australia</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Italy">Italy</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="UK">UK</option>
+                    <option value="Other">Other</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="Country Name">Country/City Name</label>
+            <br>
+            <input type="text" placeholder="Mention if other">
+            <br>
+            <label for="No of Persons">No of Persons</label>
+            <input type="text" required>
+            <br>
+            <label for="Date for travel">Date for travel</label>
+            <br>
+            From<input type="date">
+            <br>
+            To <input type="date">
+            <br>
+            <label for="Budget">Budget</label>
+            <input type="text" placeholder=" in &#8377;">
+            <br>
+            <label for="Necessity">Necessity of Hotel Booking</label>
+            <br>
+            <input type="radio" name="necessity">Yes
+            <input type="radio" name="necessity">No
+            <br>
+            <input class="button" type="Submit">
+            <br>
+        </form>
         <br>
-        <input type="text" placeholder="Name" required>
-        <br>
-
-        <label for="Phone No">Phone No</label>
-        <br>
-        <input type="text" required>
-        <br>
-        <label for="Email Id">Email Id</label>
-        <br>
-        <input type="email" required>
-        <br>
-        <label for="Password">Password</label>
-        <br>
-        <input type="password" required>
-        <br>
-
-        <label for="Trip Type">Trip Type</label>
-        <select>
-            <optgroup label="Indian">
-                <option value="Kerala">Kerala</option>
-                <option value="Kochi">Kochi</option>
-                <option value="Tirupati">Tirupati</option>
-                <option value="Darjelling">Darjelling</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Chennai">Chennai</option>
-                <option value="Goa">Goa</option>
-                <option value="OOty">OOty</option>
-                <option value="Coorg">Coorg</option>
-                <option value="Other">Other</option>
-
-            </optgroup>
-
-            <optgroup label="International">
-                <option value="Australia">Australia</option>
-                <option value="Bali">Bali</option>
-                <option value="Korea">Korea</option>
-                <option value="Paris">Paris</option>
-                <option value="Japan">Japan</option>
-                <option value="Canada">Canada</option>
-                <option value="Spain">Spain</option>
-                <option value="Italy">Italy</option>
-                <option value="New Zealand">New Zealand</option>
-                <option value="UK">UK</option>
-                <option value="Other">Other</option>
-            </optgroup>
-        </select>
-        <br>
-        <label for="Country Name">Country/City Name</label>
-        <br>
-        <input type="text" placeholder="Mention if other">
-        <br>
-        <label for="No of Persons">No of Persons</label>
-        <input type="text" required>
-        <br>
-        <label for="Date for travel">Date for travel</label>
-        <br>
-        From<input type="date">
-        <br>
-        To <input type="date">
-        <br>
-        <label for="Budget">Budget</label>
-        <input type="text" placeholder=" in &#8377;">
-        <br>
-        <label for="Necessity">Necessity of Hotel Booking</label>
-        <br>
-        <input type="radio" name="necessity">Yes
-        <input type="radio" name="necessity">No
-        <br>
-        <input class="button"  type="Submit">
-        <br>
-      
-
-    </form>
-    <br>
-    <footer>
-        <h4>For any queries:</h4>
-        <h5>Contact +91 8179075295</h5>
-        <h5>Email <br> mksrikruthi2006@gmail.com</h5>
-    </footer>
-</div>
-    
+        <footer>
+            <h4>For any queries:</h4>
+            <h5>Contact +91 8179075295</h5>
+            <h5>Email <br> mksrikruthi2006@gmail.com</h5>
+        </footer>
+    </div>
 </body>
 </html>
+      
